@@ -1,0 +1,160 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+body {
+    padding: 20px;
+    background: #f3ead8;
+}
+
+header {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+header h1 {
+    font-size: 32px;
+    color: #120238;
+}
+
+header p {
+    font-size: 16px;
+    color: #666;
+}
+
+.form-section, .display-section {
+    background: white;
+    padding: 20px;
+    margin: 20px auto;
+    width: 90%;
+    max-width: 900px;
+    border-radius: 10px;
+    box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+}
+
+input {
+    width: 100%;
+    padding: 8px;
+    margin-top: 4px;
+    border-radius: 6px;
+    border: 1px solid #aaa;
+}
+
+.input-group {
+    margin-bottom: 14px;
+}
+
+.btn {
+    padding: 10px 20px;
+    border: none;
+    background: #1e88e5;
+    color: white;
+    border-radius: 6px;
+    cursor: pointer;
+}
+
+.btn:hover {
+    background: #0d6bd8;
+}
+
+#scrollContainer {
+    max-height: 200px;
+    overflow-y: auto;
+    border: 1px solid #ddd;
+    margin-top: 15px;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+table th {
+    background: #034d8d;
+    color: white;
+    padding: 10px;
+    text-align: left;
+}
+
+table td {
+    padding: 10px;
+    border-bottom: 1px solid #eee;
+}
+
+.action-btn {
+    padding: 5px 10px;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+}
+
+.edit {
+    background: #ffc107;
+}
+
+.delete {
+    background: #e53935;
+    color: white;
+}
+
+/* RESPONSIVE DESIGN */
+
+/* MOBILE */
+@media (max-width: 640px) {
+
+    header h1 {
+        font-size: 24px;
+        text-align: center;
+    }
+
+    .form-section,
+    .display-section {
+        width: 100%;
+        padding: 10px;
+    }
+
+    form input,
+    form button {
+        width: 100%;
+        font-size: 14px;
+    }
+
+    table {
+        font-size: 12px;
+        display: block;
+        overflow-x: auto;  
+        white-space: nowrap;
+    }
+
+    .action-btn {
+        padding: 5px 8px;
+        font-size: 12px;
+    }
+}
+
+/* TABLET */
+@media (min-width: 641px) and (max-width: 1024px) {
+
+    header h1 {
+        font-size: 28px;
+    }
+
+    .form-section,
+    .display-section {
+        width: 90%;
+        margin: auto;
+    }
+
+    form input,
+    form button {
+        width: 100%;
+        font-size: 16px;
+    }
+
+    table {
+        font-size: 14px;
+    }
+}
